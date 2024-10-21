@@ -1,0 +1,7 @@
+numpy==1.26.4
+peft==0.12.0
+safetensors==0.4.5
+tokenizers==0.19.1
+torch==2.2.2+cu121
+transformers==4.43.3
+wandb==0.18.3
