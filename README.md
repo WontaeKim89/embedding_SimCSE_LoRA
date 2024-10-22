@@ -36,7 +36,7 @@ LoRA 방식을 적용하여 Fine-Tuning 할 수 있도록 학습 코드를 구�
 python3 train.py --data_type 0 --fine-tune_model_yn 0
 ```
 ## Architecture
-**![fine_tuning_architecture](./images/fine_tuning_architecture.png)**
+**![fine_tuning_architecture](./images/fine_tuning_architecture_.png)**
 
 
 ## Arguments
