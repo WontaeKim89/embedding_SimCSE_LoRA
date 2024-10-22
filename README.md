@@ -1,4 +1,4 @@
-<h1 align="center"> <p>🤗 LoRA와 SimCSE를 이용한<br>한국어 임베딩 모델 Fine-Tuning 하기</p></h1>
+<h1 align="center"> <p>🤗 LoRA와 SimCSE를 이용한<br>한국어 임베딩 모델 Fine-Tuning</p></h1>
 <h3 align="center">
     <p>Korean Embedding Model Fine-Tuning (with LoRA+SimCSE)</p>
 </h3>
@@ -17,7 +17,6 @@ LoRA 방식을 적용하여 Fine-Tuning 할 수 있도록 학습 코드를 구�
 
 ## Quickstart
 
----
 ### Training Dataset setting<br>
 - 학습을 시작하기 전, 해당 프로젝트의 경로에 아래 데이터 형식을 가진 <br> normal_sentences.pkl 또는 strong_dataset.pkl 파일이 셋팅되어 있어야 합니다.<br>
 
@@ -39,7 +38,6 @@ python3 train.py --data_type 0 --fine-tune_model_yn 0
 
 ## Arguments
 
----
 - ### --epochs 
   - Epoch 횟수를 설정합니다.
   - Default : 10
