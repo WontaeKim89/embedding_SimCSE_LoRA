@@ -33,10 +33,13 @@ def train_epoch(model, dataloader_A, optimizer, device, loss_temperature, datalo
         if not is_dual:
             batch = data
             input_ids, attention_mask = batch['input_ids'].to(device), batch['attention_mask'].to(device)
-            outputs = model(input_ids, attention_mask=attention_mask, return_dict=True)
-            hidden_states = outputs.last_hidden_state
-            embeddings_1 = hidden_states[:, 0, :].to(device)
-            embeddings_2 = hidden_states[:, 0, :].to(device)
+            outputs1 = model(input_ids, attention_mask=attention_mask, return_dict=True)
+            hidden_states1 = outputs1.last_hidden_state
+            embeddings_1 = hidden_states1[:, 0, :].to(device)
+
+            outputs2 = model(input_ids, attention_mask=attention_mask, return_dict=True)
+            hidden_states2 = outputs2.last_hidden_state
+            embeddings_2 = hidden_states2[:, 0, :].to(device)
         
         else:
             batch_A, batch_B = data
