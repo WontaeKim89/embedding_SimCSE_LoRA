@@ -14,6 +14,12 @@ LoRA 방식을 적용하여 Fine-Tuning 할 수 있도록 학습 코드를 구�
 경로내에 정해진 포멧으로 학습 데이터를 구성하고 train.py 파일에 정의된 argument를 입력하여 실행하면<br>
 간편하게 LoRA를 적용한 SimCSE 방식의 Embedding Model Fine-Tuning이 가능합니다.
 
+<br>
+
+> [!TIP]<br>
+> 자세한 학습방법 및 학습코드에 대한 해설을 아래 블로그에 정리해 두었습니다.<br>
+> 학습코드를 사용하기 전 아래 포스팅 내용을 꼭 한번 읽어보시기를 권장드립니다.<br>
+> > * BLOG :  https://familia-89.tistory.com/101
 
 ## Quickstart
 
@@ -64,7 +70,7 @@ python3 train.py --data_type 0 --fine-tune_model_yn 0
   - loss를 통한 backpropagation 진행 시, weight update 반영 수준 설정
   - Default : 0.1
 - ### --batch_size
-  - batch_size 설정
+  - batch_size 설정, 학습 구조 상 batch_size를 작게 설정하는것을 권장드립니다. (4~16)
   - Default : 64
 - ### --train_mode
   - True : fine-tuning 진행
